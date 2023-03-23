@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0; /*todo esto es para que no quede bordes*/
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: plum;
+    /*fondo*/
+    height: 80px;
+    /*altura*/
+    width: 100%;
+    /*ancho*/
+    /*margin: auto; me sirve para centrar un elemento que no tiene el 100% del ancho*/
+
+}
+
+footer{/*verificar Margin-bottom cuando agregue contenido a la clase contenido*/
+    height: 60px;
+    width: 100%;
+    background-color: rgba(240, 223, 234, 1);
+    position: fixed;
+    bottom: 0;
+}
+.contenido{
+    height: 800px;
+    width:80%;
+    margin: auto;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    margin-bottom: 60px;
+
+}
