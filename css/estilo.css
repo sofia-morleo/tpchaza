@@ -14,6 +14,25 @@ header {
     /*ancho*/
     /*margin: auto; me sirve para centrar un elemento que no tiene el 100% del ancho*/
 
+    display: flex;
+    justify-content: space-between;
+
+}
+header .marca{
+    background-color: #3aaee463;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+header .social{
+    background-color: #9fd61f;
+    padding: 0.5em;
+}
+
+
+.boton{
+    background-color: aqua;
 }
 
 footer{/*verificar Margin-bottom cuando agregue contenido a la clase contenido*/
@@ -32,3 +51,18 @@ footer{/*verificar Margin-bottom cuando agregue contenido a la clase contenido*/
     margin-bottom: 60px;
 
 }
+/*----tipografia---*/
+
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Lora&display=swap');
+
+.tipo1{
+    font-family: 'Delicious Handrawn', cursive;
+}
+.tipo2{
+    font-family: 'Lora', serif;
+}
+.fw300{
+    font-weight: 300;
+}
+
+/*TAMAÑOS -para tipografias usamos 10pt(puntos) point=pt, pixel=px,proporcional=%/vw(view por view en acho del ordenador/vh view de alto, 1em= es igual a 12pt*/
