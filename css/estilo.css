@@ -13,23 +13,69 @@ header {
     width: 100%;
     /*ancho*/
     /*margin: auto; me sirve para centrar un elemento que no tiene el 100% del ancho*/
-
+    padding: 0 10%;/*eje y y eje x padding: y x;*/
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 header .marca{
-    background-color: #3aaee463;
-    padding: 10px;
-    color: white;
-    font-size: 20px;
+    font-size: 20pt;
 }
 
 header .social{
-    background-color: #9fd61f;
-    padding: 0.5em;
+    font-size: 15pt;
+    
+}
+.social a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: gray
+
 }
 
+.social a:hover{
+    color:rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(124, 164, 189);
+
+}
+.card{
+    position: relative;/*positive relative pone las cordenadas de algo donde lo queres mover*/
+    width:30% ;
+    height:500px ;
+    background-color:rgb(230, 118, 187);
+    padding: 20px;/*marco */
+    border-radius: 15px;/*redondeo de las puntas*/
+
+}
+.card .titulo{/*se modifica la clase titulo dentro de la clase card*/
+    font-size: 14pt;
+}
+.card .imagen{/*se modifica la clase imagen dentro de la clase card*/
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.card .boton{/*se modifica la clase boton dentro de la clase card*/
+    position: absolute;
+    /*top: 220px; para adentro positivo y para a fuera negativo*/
+    bottom: 20px;
+    right: 20px;/* ponemos lo mismo de padding de clase card para que tenga el mismo margen, pero podes poner lo que quieras*/
+    border-radius: 15px ;/*redondeo de las puntas/ ejemplo border-radius: 15px 0px(me redondea en solo dos lados/se puede ir modificando eso)*/
+
+    background-color: rgb(161, 137, 226);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 12pt;
+    font-family: sans-serif;
+
+    
+}
+.card .boton:hover{
+    box-shadow: 0 0 5px ;/*cuando seleccionas hace un degradado a los costados cuando esta en maouse en ese objeto*/
+}
 
 .boton{
     background-color: aqua;
