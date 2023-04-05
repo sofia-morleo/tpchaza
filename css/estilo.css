@@ -51,7 +51,7 @@ header .social{
 .card{/* son los cuadrados las ventanitas*/
     position: relative;/*positive relative pone las cordenadas de algo donde lo queres mover*/
     /*width:30% ;*/
-    flex: 1 0 100px;/* con cero hace que no se achique*//*si es flex:1; se asigna al width----- FORMA ABREVIADA DE flex-grow,flex-shrink,flex-basis*/
+    flex: 1 0 300px;/* con cero hace que no se achique y 1 si*//*si es flex:1; se asigna al width----- FORMA ABREVIADA DE flex-grow,flex-shrink,flex-basis*/
     
     /*flex-grow: 1;se agranda siempre que halla espacio si no tine espacio no se agrande(se acopla al tamaño que hay de pantalla)*/
     /*flex-shrink: 0; permite o no que el contenedor se achique*/
