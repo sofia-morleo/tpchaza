@@ -5,7 +5,7 @@
 }
 
 header {
-    background-color: plum;
+    background-color: rgba(214, 141, 192, 0.836);
     /*fondo*/
     height: 80px;
     /*altura*/
@@ -29,7 +29,7 @@ header .social{
 .social a{
     text-decoration: none;
     margin: 0 10px;
-    color: gray
+    color: rgb(255, 255, 255)
 
 }
 
@@ -38,11 +38,28 @@ header .social{
     text-shadow: 0 0 5px rgb(124, 164, 189);
 
 }
-.card{
+.contenedor{/*acomoda los cuadritos para que no esten uno abajo de otro*/
+    display: flex;/*ordena la fila*/
+    /* habilita flexbox al contenido de mi selector*/
+    /*flex-direction:row/column si no esta dipley:flex va directo a row-----colum el flex: 1 0 va al alto----si va a row el flex va a ancho*/
+    flex-direction: row;
+    gap: 25px; /*similar a margin pero gap solo funciona con flexbox*/
+    
+    
+}
+
+.card{/* son los cuadrados las ventanitas*/
     position: relative;/*positive relative pone las cordenadas de algo donde lo queres mover*/
-    width:30% ;
+    /*width:30% ;*/
+    flex: 1 0 100px;/* con cero hace que no se achique*//*si es flex:1; se asigna al width----- FORMA ABREVIADA DE flex-grow,flex-shrink,flex-basis*/
+    
+    /*flex-grow: 1;se agranda siempre que halla espacio si no tine espacio no se agrande(se acopla al tamaño que hay de pantalla)*/
+    /*flex-shrink: 0; permite o no que el contenedor se achique*/
+    /*flex-basis: ;especificar un ancho y altura minima*/
+    /*TODO ESTO LA MANERA ABREVIADA ES EL flex: 1 0;*/
+
     height:500px ;
-    background-color:rgb(230, 118, 187);
+    background-color:rgb(214, 141, 192);
     padding: 20px;/*marco */
     border-radius: 15px;/*redondeo de las puntas*/
 
@@ -63,7 +80,7 @@ header .social{
     right: 20px;/* ponemos lo mismo de padding de clase card para que tenga el mismo margen, pero podes poner lo que quieras*/
     border-radius: 15px ;/*redondeo de las puntas/ ejemplo border-radius: 15px 0px(me redondea en solo dos lados/se puede ir modificando eso)*/
 
-    background-color: rgb(161, 137, 226);
+    background-color: rgb(206, 106, 189);
     padding: 10px;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -88,11 +105,12 @@ footer{/*verificar Margin-bottom cuando agregue contenido a la clase contenido*/
     bottom: 0;
 }
 .contenido{
-    height: 800px;
-    width:80%;
+    height: 1000px;
+    width:85%;
     margin: auto;
-    background-color: #FFDEE9;
-    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    background-color: #A9C9FF;
+    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);/*degradado lo podemos hacer con esta pagina web grabient*/
+
     margin-bottom: 60px;
 
 }
