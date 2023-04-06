@@ -3,16 +3,24 @@
     .contenido{
         width: 100%;
         height: auto;/*fit-content es ajustarse al contenido*/
+        padding: 14px;
     }
     .contenedor{
         padding: 10px;
         flex-direction: column;
     }
     .card{
-        flex: 1 0 400px;
+        flex: 1 0 400px;/*los cuadritos*/
     }
     footer h4{
-        font-size: 12px;
+        font-size: 13px;/*tamaño de las letras del footer*/
+    }
+    header{
+        height: 40px;
+        padding: 0 20px;
+    }
+    header .marca, header .social{
+        font-size: 14pt;
     }
     
 }

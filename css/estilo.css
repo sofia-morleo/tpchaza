@@ -103,7 +103,8 @@ footer{/*verificar Margin-bottom cuando agregue contenido a la clase contenido*/
     background-color: rgba(240, 223, 234, 1);
     position: fixed;
     bottom: 0;
-    line-height: 60px;/*centra el texto pero en el eje y*/
+    line-height: 30px;/*centra el texto pero en el eje y*/
+    text-align: center;
 }
 .contenido{
     height: 1000px;
