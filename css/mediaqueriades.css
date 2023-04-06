@@ -1,0 +1,18 @@
+@media screen and (max-width:662px){
+    
+    .contenido{
+        width: 100%;
+        height: auto;/*fit-content es ajustarse al contenido*/
+    }
+    .contenedor{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .card{
+        flex: 1 0 400px;
+    }
+    footer h4{
+        font-size: 12px;
+    }
+    
+}
