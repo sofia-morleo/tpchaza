@@ -17,3 +17,20 @@
 .fw300{
     font-weight: 300;
 }
+
+/*---estilo de proyecto*/
+
+.portada{
+    background-color: rgb(198, 170, 224);
+    padding: 20px;
+}
+
+.menu{
+    background-color: rgb(133, 137, 187);
+    padding: 20px;
+}
+
+.productos{
+    background-color: rgb(211, 157, 190);
+    padding: 20px;
+}
