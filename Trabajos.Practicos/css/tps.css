@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0; /*todo esto es para que no quede bordes*/
+    box-sizing: border-box;
+}
+
+/*----tipografia---*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Schibsted+Grotesk&display=swap');
+
+.tipo1{
+    font-family: 'Lato', sans-serif;
+}
+.tipo2{
+    font-family: 'Schibsted Grotesk', sans-serif;
+}
+.fw300{
+    font-weight: 300;
+}
