@@ -16,15 +16,41 @@
 }
 .fw300{
     font-weight: 300;
+} 
+/*estilos pára la imagene de fondo*/
+.bnrep{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
 }
 
 /*---estilo de proyecto*/
 
 .portada{
-    background-color: rgb(198, 170, 224);
-    padding: 20px;
+    position: relative;
+    background-image: url(../img/portada.png);/*poner una imagen de fondo*/
+    /*background-color: rgb(198, 170, 224);*/
+    padding: 7%;
+    color: white;
+    box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.884);/*sombreado a la foto(al fondo con el inset dice que haga el sombredo adentro*/
+    height: 350px;
+}
+.busqueda{/*contenedor de la busqueda del usuario*/
+    position: absolute;
+    bottom: -15px;
+    background-color: rgb(95, 95, 95);
+    width: 86%;
+    height: 60px;/*le da el tamaño al cuadradito*/
+    margin:  auto;
+    box-shadow: 0 18px 20px -15px rgba(0, 0, 0, 0.404);/* x y difuminado color*/
+}
+.busqueda .icono{
+    height: 100%;
+    
 }
 
+
+/*fin portada*/
 .menu{
     background-color: rgb(133, 137, 187);
     padding: 20px;
