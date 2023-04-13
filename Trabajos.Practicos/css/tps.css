@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0; /*todo esto es para que no quede bordes*/
     box-sizing: border-box;
+    transform: all 0.2s ease-in-out;
 }
 
 /*----tipografia---*/
@@ -63,6 +64,17 @@
     width: calc(100% - 120px);/*una calculadora*/
     border: none;/*saca el borde del cuadrito de busqueda*/
     outline: none;/*para cuando seleccione el cuadritop de busqueda no aparesca el marco*/
+    padding: 0px 20px;
+}
+.busqueda input[type="search"]:focus{
+    font-size: 12px;
+    transform: all 0.2s ease-in-out;
+}
+.busqueda input[type="submit"]{/*modifica el icono de buscar*/
+    height: 100%;
+    width: 60px;
+    font-size: 20px;
+    
 }
 
 
