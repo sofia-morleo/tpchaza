@@ -22,7 +22,7 @@
 .bnrep{
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center ;
+    background-position: center bottom;/*la posicion de la imagen */
 }
 
 /*---estilo de proyecto*/
@@ -47,6 +47,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;/*que todos los elementos tengan la misma distancia*/
+    border-radius: 10px;/*redondeo de las puntas*/
+    overflow: hidden;/*todo quello que se rebase de los limites del contenedor que haga algo que desaparesca entre otas cosas*/
 }
 .busqueda .icono{
     background-color:rgb(207, 81, 91);
@@ -59,6 +61,7 @@
 .icono.material-icons-outlined{
     font-size: 24pt;
 }
+
 .busqueda input[type="search"]{/*el cuadrito d ebusqueda*/
     height: 100%;
     width: calc(100% - 120px);/*una calculadora*/
@@ -68,13 +71,18 @@
 }
 .busqueda input[type="search"]:focus{
     font-size: 12px;
-    transform: all 0.2s ease-in-out;
+    
+}
+.busqueda input[type="submit"]:active{
+    font-size: 12px;
+    
 }
 .busqueda input[type="submit"]{/*modifica el icono de buscar*/
     height: 100%;
     width: 60px;
     font-size: 20px;
-    
+
+
 }
 
 
