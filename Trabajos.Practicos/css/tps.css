@@ -38,15 +38,31 @@
 .busqueda{/*contenedor de la busqueda del usuario*/
     position: absolute;
     bottom: -15px;
-    background-color: rgb(95, 95, 95);
+    background-color: rgb(255, 255, 255);
     width: 86%;
     height: 60px;/*le da el tamaño al cuadradito*/
     margin:  auto;
     box-shadow: 0 18px 20px -15px rgba(0, 0, 0, 0.404);/* x y difuminado color*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/*que todos los elementos tengan la misma distancia*/
 }
 .busqueda .icono{
+    background-color:rgb(207, 81, 91);
     height: 100%;
+    width: 60px;
+    text-align: center;
+    line-height: 60px;/*para aliniar en el eje y utilizar el emismo valor que el height*/
     
+}
+.icono.material-icons-outlined{
+    font-size: 24pt;
+}
+.busqueda input[type="search"]{/*el cuadrito d ebusqueda*/
+    height: 100%;
+    width: calc(100% - 120px);/*una calculadora*/
+    border: none;/*saca el borde del cuadrito de busqueda*/
+    outline: none;/*para cuando seleccione el cuadritop de busqueda no aparesca el marco*/
 }
 
 
