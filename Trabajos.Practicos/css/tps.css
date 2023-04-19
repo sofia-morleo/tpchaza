@@ -4,7 +4,30 @@
     box-sizing: border-box;
     transform: all 0.2s ease-in-out;
 }
+/*CONTENEDOR SCROLLBAR-- para que se vea mas lindo*/
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
+}
 
+/* FONDO BARRA SCROLL*/
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* SELECTOR */
+::-webkit-scrollbar-thumb {
+    background: rgb(109, 223, 185);
+    ;
+    border-radius: 5px;
+}
+
+/* SELECTOR hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(84, 171, 142);
+    ;
+}
 /*----tipografia---*/
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Schibsted+Grotesk&display=swap');
@@ -73,8 +96,8 @@
     outline: none;/*para cuando seleccione el cuadritop de busqueda no aparesca el marco*/
     padding: 0px 20px;
 }
-.busqueda input[type="search"]:focus{
-    font-size: 12px;
+.busqueda input[type="search"]:focus{/*agranda la tipografia cuando hagan click*/
+    font-size: 15px;
     
 }
 .busqueda input[type="submit"]:active{
@@ -92,10 +115,30 @@
 
 /*fin portada*/
 .menu{
+    margin-top: 20px;
     background-color: rgb(133, 137, 187);
     padding: 20px;
+    
 }
-
+.menu ul{
+    display: flex;
+    justify-content:flex-start ;/*flex-start se alinee desde la izquierda*/
+    overflow-x:scroll;/*para que en el eje x tenga scroll se pueda mover y ver*/
+}
+.menu ul li{
+    flex: 0 0 130px;
+    
+    text-align: center;
+    list-style: none;
+}
+.menu a{
+    
+    color: black;
+    text-decoration:none                        ;
+    font-size: 19px;
+   
+}
+/*fin menu*/
 .productos{
     background-color: rgb(211, 157, 190);
     padding: 20px;

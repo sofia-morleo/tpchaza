@@ -1,0 +1,10 @@
+@media screen and (max-width:662px){
+
+    ::-webkit-scrollbar {
+    height: opx;/*0px para que cuando este en el celular desaparesca porque lo sroleamos con el dedo no mesetitamos el sroll*/
+    width: 5px;
+    border-radius: 5px;
+}
+
+
+}
