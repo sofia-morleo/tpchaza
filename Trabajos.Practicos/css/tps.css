@@ -36,6 +36,10 @@
     box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.884);/*sombreado a la foto(al fondo con el inset dice que haga el sombredo adentro*/
     height: 350px;
 }
+.portada .texto{/*el texto de la imagen cambio de posicion*/
+    position: absolute;
+    bottom: 70px;
+}
 .busqueda{/*contenedor de la busqueda del usuario*/
     position: absolute;
     bottom: -15px;
