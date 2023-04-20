@@ -12,12 +12,12 @@
 }
 
 /* FONDO BARRA SCROLL*/
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {/*donde se desliza la barra*/
     background: #f1f1f1;
 }
 
 /* SELECTOR */
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {/*los dos puntos :: son ceudo clase*/
     background: rgb(109, 223, 185);
     ;
     border-radius: 5px;
@@ -126,8 +126,8 @@
     overflow-x:scroll;/*para que en el eje x tenga scroll se pueda mover y ver*/
 }
 .menu ul li{
+    height: 65px;
     flex: 0 0 130px;
-    
     text-align: center;
     list-style: none;
 }
@@ -143,3 +143,27 @@
     background-color: rgb(211, 157, 190);
     padding: 20px;
 }
+.restos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(212, 112, 167);
+    align-items: center;
+}
+.card{
+    display: flex;
+    flex: 1 0 160px ;/*indicar la altura o el ancho depende pero ene ste indica el ancho*/
+    width: 90%;
+    background-color: rgb(179, 30, 129);
+    
+}
+.card .img{
+    flex: 0 0 40%;
+    background-color: rgb(55, 55, 163);
+}
+.card .datosresto{
+    flex: 0 0 60%;
+    background-color: rgb(55, 159, 163);
+}
+
+/*-----fin producto----*/
