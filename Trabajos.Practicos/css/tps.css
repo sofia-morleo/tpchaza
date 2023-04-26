@@ -108,8 +108,6 @@
     height: 100%;
     width: 60px;
     font-size: 20px;
-
-
 }
 
 
@@ -149,35 +147,54 @@
     flex-direction: column;
     background-color: rgb(212, 112, 167);
     align-items: center;
+    padding: 10px;
 }
 .card{
     display: flex;
-    flex: 1 0 160px ;/*indicar la altura o el ancho depende pero ene ste indica el ancho*/
+    flex: 1 0 160px;/*indicar la altura o el ancho depende pero ene ste indica el ancho*/
     width: 90%;
+    height: 200px;
     background-color: rgb(190, 165, 182);
     
 }
 .card .img{
     display: flex;
     flex: 1 0 160px ;/*indicar la altura o el ancho depende pero ene ste indica el ancho*/
-    width: 50px;
-    height:250px;
+    overflow: hidden;/*para que lo que sobresale se recorte*/
+    
     background-color: rgb(55, 55, 163);
     border-radius: 25px 0px 0px 25px;
 }
+
+.img > img{
+    height: 100%;
+    object-fit: cover;
+}
+
+
 .card .datosresto{
     padding: 2%;
-
     flex: 0 0 60%;
     background-color: rgb(187, 144, 144);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     text-align: left;
     border-radius: 0px 25px;
 }
-h3{
+
+.valores{
+    display: flex;
+    justify-content: space-between;
+}
+
+h4{
     font-size: 10pt;
     color: rgb(212, 208, 208);
     
 }
+
 .card .datosresto .calif{
     
     width: 50px;
