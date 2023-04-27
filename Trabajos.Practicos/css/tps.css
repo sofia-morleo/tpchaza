@@ -155,9 +155,9 @@
 }
 .card{
     display: flex;
-    flex: 0 0 160px;/*indicar la altura o el ancho depende pero ene ste indica el ancho*/
+    flex: 0 0 49.1%;/*indicar la altura o el ancho depende pero ene ste indica el ancho*/
     width: 90%;
-    height: 200px;
+    /*height: 200px;*/
     background-color: rgb(197, 128, 119);
     box-shadow: 0 0 15px 2px black;
     border-radius: 25px 0px 0px 25px;
@@ -168,7 +168,7 @@
     overflow: hidden;/*para que lo que sobresale se recorte*/
     height: 160px;
     
-    background-color: rgb(182, 104, 101);
+    /*background-color: rgb(182, 104, 101);*/
     border-radius: 25px 0px 0px 25px;
 }
 
