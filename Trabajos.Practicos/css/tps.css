@@ -153,10 +153,18 @@
     
 
 }
+.listaresto{
+    width: 80%;
+    margin: auto;
+    background-color: rgb(211, 128, 3);
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 25px;
+}
 .card{
     display: flex;
-    flex: 0 0 49.1%;/*indicar la altura o el ancho depende pero ene ste indica el ancho*/
-    width: 90%;
+    flex: 1 1 48%;/*indicar la altura o el ancho depende pero ene ste indica el ancho*/
+   
     /*height: 200px;*/
     background-color: rgb(197, 128, 119);
     box-shadow: 0 0 15px 2px black;
