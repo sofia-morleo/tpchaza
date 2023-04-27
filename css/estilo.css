@@ -43,6 +43,7 @@ header .social{
     /* habilita flexbox al contenido de mi selector*/
     /*flex-direction:row/column si no esta dipley:flex va directo a row-----colum el flex: 1 0 va al alto----si va a row el flex va a ancho*/
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 25px; /*similar a margin pero gap solo funciona con flexbox*/
     
     

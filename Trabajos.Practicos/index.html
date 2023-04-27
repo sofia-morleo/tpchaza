@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/tps.css">
     <link rel="stylesheet" href="css/mq.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"rel="stylesheet"> <!-- es para los logos de google icons  --> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><!--  es para el logito -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <!-- es para los logos de google icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--  es para el logito -->
     <title>Restaurante</title>
 
 </head>
+
 <body>
     <section class="portada bnrep ">
         <div class="mensaje tipo2">
@@ -22,88 +26,166 @@
                 <div class="icono material-icons-outlined ">
                     place
                 </div>
-                <input type="search" placeholder="Buscar restaurante" ><!--nos pone un audrado para incresar informacion  -->
+                <input type="search"
+                    placeholder="Buscar restaurante"><!--nos pone un audrado para incresar informacion  -->
                 <input type="submit" class="material-icons-outlined" value="search"> <!-- los iconos -->
 
             </div>
         </div>
     </section>
 
-    <section><div class="menu tipo2">
-        <ul><!--  control k control c -->
-            <li>
-            <a href="#menu">
-                <i class="material-icons-outlined">local_cafe</i>
-                <p>Desayuno</p>
-            </a>
-            </li>
-             <li>
-                <a href="#">
-                    <i class="material-icons-outlined">dinner_dining </i>
-                    <p>Cena</p>
+    <section>
+        <div class="menu tipo2">
+            <ul><!--  control k control c  para comentar-->
+                <li>
+                    <a href="#menu">
+                        <i class="material-icons-outlined">local_cafe</i>
+                        <p>Desayuno</p>
                     </a>
                 </li>
-            <li>
-                <a href="#">
-                    <i class="material-icons-outlined">fastfood</i>
-                    <p>Fast Food</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="material-icons-outlined">ramen_dining</i>
-                    <p>Fideos</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="material-icons-outlined">cake</i>
-                    <p>Postres</p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="material-icons-outlined">local_bar</i>
-                    <p>Bebidas </p>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="material-icons-outlined">lunch_dining  </i>
-                    <p>Hamburguesa</p>
-                </a>
-            </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons-outlined">dinner_dining </i>
+                        <p>Cena</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons-outlined">fastfood</i>
+                        <p>Fast Food</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons-outlined">ramen_dining</i>
+                        <p>Fideos</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons-outlined">cake</i>
+                        <p>Postres</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons-outlined">local_bar</i>
+                        <p>Bebidas </p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons-outlined">lunch_dining </i>
+                        <p>Hamburguesa</p>
+                    </a>
+                </li>
 
 
 
-        </ul>
-    </div>
-</section>
+            </ul>
+        </div>
+    </section>
 
     <section class="productos">
         <h2>Restaurantes</h2>
         <div class="restos">
+            
+            <!-- ----esto vamos a hacer para crear tarjetas JSON --- -->
             <article class="card">
                 <div class="img">
                     <img src="img/portada.png" alt="mensaje para la foto">
                 </div>
                 <div class="datosresto tipo2">
-                    <h3>Gran Makakam</h3>
-                    <h4>
-                        <p>Argentina, Bs.As.
-                        <p>9:00-11:00
-                    </h4>
-    
+                    <div class="titulo">
+                        <h3>Gran Makakam</h3>
+                        <h4>Argentina, Bs.As.</h4>
+                        <h5>9:00-11:00</h5>
+
+                    </div>
                     <div class="valores">
                         <div class="estrella">
-                            <i class="icono material-icons-outlined"> star star star star_half star_outlined</i>
+                            <i class="icono material-icons-outlined f12"> star star star star_half star_outlined</i>
                         </div>
                         <div class="rangoprecio">
-                            <i class="icono material-icons-outlined"> attach_money attach_money attach_money
+                            <i class="icono material-icons-outlined f12"> attach_money attach_money attach_money
+                            </i>
+                        </div>
+
+                    </div>
+                    <div class="puntuacion">3.5</div>
+
+                    <!--<div class="calif">4.8</div>
+                  <div class="calificacion">
+                    <div class="icono material-icons-outlined ">star</div>
+                    <div class="icono material-icons-outlined ">star</div>
+                    <div class="icono material-icons-outlined ">star</div>
+                    <div class="icono material-icons-outlined ">star</div>
+                    <div class="icono material-icons-outlined ">star_half</div>
+                </div> -->
+                </div>
+
+
+            </article>
+
+            <!-- HASTA ACA vamos a usar para crear tarjetas JSON -->
+            <article class="card">
+                <div class="img">
+                    <img src="img/donjulio.jpg" alt="mensaje para la foto">
+                </div>
+                <div class="datosresto tipo2">
+                    <div class="titulo">
+                        <h3>Don Julio</h3>
+                        <h4>Argentina, Bs.As.</h4>
+                        <h5>9:00-11:00</h5>
+
+                    </div>
+                    <div class="valores">
+                        <div class="estrella">
+                            <i class="icono material-icons-outlined f12"> star star star star_half star_outlined</i>
+                        </div>
+                        <div class="rangoprecio">
+                            <i class="icono material-icons-outlined f12"> attach_money attach_money attach_money
+                            </i>
+                        </div>
+
+                    </div>
+                    <div class="puntuacion">3.5</div>
+
+                    <!--<div class="calif">4.8</div>
+              <div class="calificacion">
+                <div class="icono material-icons-outlined ">star</div>
+                <div class="icono material-icons-outlined ">star</div>
+                <div class="icono material-icons-outlined ">star</div>
+                <div class="icono material-icons-outlined ">star</div>
+                <div class="icono material-icons-outlined ">star_half</div>
+            </div> -->
+                </div>
+
+
+            </article>
+
+            <article class="card">
+                <div class="img">
+                    <img src="img/kansas.jpg" alt="mensaje para la foto">
+                </div>
+                <div class="datosresto tipo2">
+                    <div class="titulo">
+                    <h3>Kansas</h3>
+                    <h4>Argentina, Bs.As.</h4>
+                     <h5>9:00-11:00</h5>
+                    
+                    </div>
+                    <div class="valores">
+                        <div class="estrella">
+                            <i class="icono material-icons-outlined f12"> star star star star_half star_outlined</i>
+                        </div>
+                        <div class="rangoprecio">
+                            <i class="icono material-icons-outlined f12"> attach_money attach_money attach_money
                             </i>
                         </div>
     
                     </div>
+                    <div class="puntuacion">3.5</div>
 
                   <!--<div class="calif">4.8</div>
                   <div class="calificacion">
@@ -117,12 +199,12 @@
 
 
         </article>
-        
-    </div>
-</section>
+        </div>
+    </section>
 
 
 
 
 </body>
+
 </html>

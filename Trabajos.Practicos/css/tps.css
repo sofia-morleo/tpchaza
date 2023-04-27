@@ -138,31 +138,37 @@
 }
 /*fin menu*/
 .productos{
-    background-color: rgb(211, 157, 190);
+    background-color: rgb(255, 255, 255);
     padding: 20px;
 }
 .restos{
     width: 100%;
     display: flex;
-    flex-direction: column;
-    background-color: rgb(212, 112, 167);
+    /*flex-direction: row;*/
+    flex-wrap: wrap;/*que los elementos se van a acomodar solos y si no hay espacio se mueve para abjo */
+    /*background-color: rgb(212, 112, 167);*/
+    gap: 25px;/*es como el margin cuando tiene el flex*/
     align-items: center;
-    padding: 10px;
+    /*padding: 10px;*/
+    
+
 }
 .card{
     display: flex;
-    flex: 1 0 160px;/*indicar la altura o el ancho depende pero ene ste indica el ancho*/
+    flex: 0 0 160px;/*indicar la altura o el ancho depende pero ene ste indica el ancho*/
     width: 90%;
     height: 200px;
-    background-color: rgb(190, 165, 182);
-    
+    background-color: rgb(197, 128, 119);
+    box-shadow: 0 0 15px 2px black;
+    border-radius: 25px 0px 0px 25px;
 }
 .card .img{
     display: flex;
     flex: 1 0 160px ;/*indicar la altura o el ancho depende pero ene ste indica el ancho*/
     overflow: hidden;/*para que lo que sobresale se recorte*/
+    height: 160px;
     
-    background-color: rgb(55, 55, 163);
+    background-color: rgb(182, 104, 101);
     border-radius: 25px 0px 0px 25px;
 }
 
@@ -173,20 +179,39 @@
 
 
 .card .datosresto{
+    position: relative;
     padding: 2%;
+    padding-top: 2%;
     flex: 0 0 60%;
-    background-color: rgb(187, 144, 144);
+    /*background-color: rgb(187, 144, 144);*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
     text-align: left;
-    border-radius: 0px 25px;
+    
+    border-radius: 12px 0;
 }
 
 .valores{
     display: flex;
     justify-content: space-between;
+}
+.f12{/*tamaño de las estrellas y el $*/
+    font-size: 12pt!important;
+}
+.puntuacion{
+    position: absolute;/*necesito para poder ubicar y que la clase padre tenga position:relative(en este caso seria .card .datosresto */
+    top: -6px;
+    right: -6px;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(196, 167, 167);
+    text-align: center;
+    line-height: 50px;
+    
+    border-radius: 12px 0px;
+
 }
 
 h4{
