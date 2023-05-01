@@ -137,46 +137,49 @@
    
 }
 /*fin menu*/
-.productos {
-
+.productos{
+    /*background-color: rgb(255, 255, 255);*/
     padding: 20px;
 }
-
-.restos {
+.restos{
     width: 100%;
     display: flex;
-    gap:20px;
+    /*flex-direction: row;*/
+    /*flex-wrap: wrap;que los elementos se van a acomodar solos y si no hay espacio se mueve para abjo */
+    /*background-color: rgb(212, 112, 167);*/
+    gap: 25px;/*es como el margin cuando tiene el flex*/
     align-items: center;
     padding: 10px 50px;
     
-  }
-  .listarestos{
-   
+
+}
+.listaresto{
     width: 80%;
     margin: auto;
+    /*background-color: rgb(211, 128, 3);*/
     display: flex;
-    flex-wrap: wrap;
-    gap:20px;
-    
-    
-  }
-
-.card {
-    display: flex;
-    flex: 0 0 50%;
-    border-radius: 10px 0 0 10px;
-    box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.465);
-    
-    
+    flex-wrap: wrap ;
+    gap: 20px;
 }
-
+.card{
+    display: flex;
+    flex: 0 0 48%;/*indicar la altura o el ancho depende pero ene ste indica el ancho*/
+   
+    /*height: 200px;*/
+    background-color: rgb(197, 128, 119);
+    box-shadow: 0 0 15px 2px black;
+    border-radius: 25px 0px 0px 25px;
+}
 .card .img{
-    flex: 0 0 40%;
+    /*display: flex;*/
+    flex: 1 0 40% ;/*indicar la altura o el ancho depende pero ene ste indica el ancho*/
+    overflow: hidden;/*para que lo que sobresale se recorte*/
     height: 160px;
-    background-color: brown;
-    overflow: hidden;
-    border-radius: 10px 0 0 10px;
+    
+    /*background-color: rgb(182, 104, 101);*/
+    border-radius: 25px 0px 0px 25px;
 }
+
 .img > img{
     height: 100%;
     object-fit: cover;
@@ -249,7 +252,7 @@ h4{
     text-align:left;
     position: relative;
     font-size: 2px;
-    color: rgb(187, 36, 36);
+    color: white;
 }
 
 /*-----fin producto----*/
