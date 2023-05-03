@@ -256,9 +256,66 @@ h4{
 /*-----fin producto----*/
 
 /*------------------resto.html---------------------------*/
+.posrel{position: relative;}
 
+.valoracion{/*el cuadradito de puntuacion*/
+    position: absolute;
+    background-color: rgb(212, 84, 84);
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    bottom: -20px;
+    right: 20px;
+    color: black;
+    font-weight: 700;
+    border-radius: 15px 0;
+    box-shadow: 0 0 10px -2px black;
+}
+
+ul{list-style: none;}
+main{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+}
+
+main ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+main ul li{text-align: center;}
+
+/*nav_mobile es el coso de los link en el bottom d ela pagina*/
 .nav_mobile{
-    background-color: rgb(184, 85, 146);
+    /*background-color: rgb(184, 85, 146);*/
     position: fixed ;/*para que un objeto este fijo donde vos quieras*/
-    bottom: 0px;
+    bottom: 0;
+    width: 100%;
+}
+
+.nav_mobile ul{
+    display: flex;/*aplica flexbox al contenerdor*/
+    justify-content: space-around;/*separa los elementos*/
+    list-style: none;
+}
+
+.nav_mobile ul li{
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.nav_mobile a{
+    text-decoration: none;
+    /*text-transform: capitalize;*/
+    color: grey;
+}
+
+.nav_mobile ul li:hover{
+    color: black;
+    border-top: solid 4px rgb(212, 84, 84);
 }
