@@ -257,7 +257,9 @@ h4{
 
 /*------------------resto.html---------------------------*/
 .posrel{position: relative;}
-
+.pa{/*pa de position absolute*/
+    position: absolute;
+}
 .valoracion{/*el cuadradito de puntuacion*/
     position: absolute;
     background-color: rgb(212, 84, 84);
@@ -319,3 +321,40 @@ main ul li{text-align: center;}
     color: black;
     border-top: solid 4px rgb(212, 84, 84);
 }
+/*----------------------------menu.html--------------------------------*/
+
+.banner{
+    width: 100%;
+    /*background-color: palevioletred;*/
+    padding: 10px;
+}
+.banner button{
+    left: 20px;
+    background-color: transparent;
+    border: 0;
+}
+.banner button:hover{
+    background-color: rgb(212, 84, 84);
+    box-shadow: 0 0 15 px -3px black;
+
+}
+.item_menu{
+    background-color: blueviolet;
+    width: 100%;
+}
+.item_menu span{
+    background-color: aqua;
+    
+}
+.plato{
+    background-color: rgb(185, 168, 141);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+/*ordenamineto de elementos lo podemos utilizar en todo//// para que no lo compiemos muchas veces*/
+.flex{display: flex;}
+.centrar_vert{align-items: center;}
+.centrar_h{justify-content: center;}
+/*fin*/
