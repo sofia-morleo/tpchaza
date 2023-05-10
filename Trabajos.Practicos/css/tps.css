@@ -12,7 +12,7 @@
 }
 
 /* FONDO BARRA SCROLL*/
-::-webkit-scrollbar-track {/*donde se desliza la barra*/
+::-webkit-scrollbar-track {/*donde se desliza la barra*/ 
     background: #f1f1f1;
 }
 
@@ -232,8 +232,8 @@ h4{
     width: 50px;
     height: 50px;
 
-    bottom: 50%;
-    right: -90%;
+    bottom: 0;
+    right: 0;
     background-color: black;
     position: relative;
     /*top: -65px;
@@ -343,27 +343,14 @@ main{
     background-color: rgba(252, 252, 252, 0.884);
 }
 .item_menu{
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
     width: 100%;
+    
 }
-.item_menu .precio{
-    width: 40px;
-    height: 30px;
-    background-color: blue;
-    position: absolute;
-    text-align: center;
-    line-height: 15px;
-    bottom: 340px;
-    right: 475px;
-    color: black;
-    font-weight: 700;
-    border-radius: 15px 0;
-    box-shadow: 0 0 10px -2px black;
 
-}
 .item_menu span{
     width: 100%;
-    background-color: rgb(183, 206, 206);
+    /*background-color: rgb(183, 206, 206);*/
     padding: 12px;
     line-height: 1.6;/*el espacio entre las palabras*/
 }
@@ -381,10 +368,26 @@ h6{
     color: rgb(153, 149, 149);
 }
 .plato{
+    position: relative;
     background-color: rgb(185, 168, 141);
     height: 100px;
     width: 120px;
     border-radius: 50%;
+}
+.plato .precio{
+    width: 40px;
+    height: 30px;
+    background-color: rgb(160, 160, 175);
+    position: absolute;
+    text-align: center;
+    line-height: 30px;
+    bottom: 10px;
+    right: 1px;
+    color: black;
+    font-weight: 700;
+    border-radius: 15px 0;
+    box-shadow: 0 0 10px -2px black;
+
 }
 .plato img{
     width:100%;
@@ -398,3 +401,40 @@ h6{
 .centrar_vert{align-items: center;}
 .centrar_h{justify-content: center;}
 /*fin*/
+
+
+/* --------producto.html--------*/
+.producto{
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+
+    
+}
+.obj_fit{
+    object-fit: cover;/*para que la imgen cubra todo /cover lo agranda hasta yenar ele scpacio/contain se va a chicar para que ocupe todo el espacio o se va a agrandar para ocupar todo pero no todo el contenedor usa/fill se la a deformar para que ocupe el espacio*/
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+.producto .titulo{
+        z-index:10;/*especifica el nivel de capa del elemento*/
+        background-color: rgb(138, 24, 43);
+        /*height: 20px;*/
+        width: 80%;
+        bottom: 0;
+        /*margin: auto;alinear un caja/clase*/
+
+}
+main{
+    background-color: blue;
+    height: 100vh;/*vh al 100 % de mi navegador*/
+    width: 100vh;
+    /*---*/
+}
+.cuadrado{
+    width: 80px;
+    height: 80px;
+    background-color: aqua;
+}
+    
