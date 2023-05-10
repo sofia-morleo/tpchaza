@@ -143,35 +143,36 @@
 .restos{
     width: 100%;
     display: flex;
+    gap: 20px;/*es como el margin cuando tiene el flex*/
     /*flex-direction: row;*/
     flex-wrap: wrap;/*que los elementos se van a acomodar solos y si no hay espacio se mueve para abjo */
     /*background-color: rgb(212, 112, 167);*/
-    gap: 25px;/*es como el margin cuando tiene el flex*/
     align-items: center;
+    padding: 5% ;
     /*padding: 10px;*/
     
 
 }
 .listaresto{
-    width: 80%;
+    width: 95%;
     margin: auto;
-    background-color: rgb(211, 128, 3);
+    /*background-color: rgb(211, 128, 3);*/
     display: flex;
     flex-wrap: wrap ;
-    gap: 25px;
+    gap: 16px;
 }
 .card{
     display: flex;
-    flex: 1 1 48%;/*indicar la altura o el ancho depende pero ene ste indica el ancho*/
-   
-    /*height: 200px;*/
-    background-color: rgb(197, 128, 119);
-    box-shadow: 0 0 15px 2px black;
+   flex: 0 0 40%; /*indicar la altura o el ancho depende pero ene ste indica el ancho*/
     border-radius: 25px 0px 0px 25px;
+    /*height: 200px;*/
+    background-color: rgb(180, 79, 79);
+    box-shadow: 0 0 15px 2px black;
+    
 }
 .card .img{
-    display: flex;
-    flex: 1 0 160px ;/*indicar la altura o el ancho depende pero ene ste indica el ancho*/
+    
+    flex: 0 0 40% ;/*indicar la altura o el ancho depende pero ene ste indica el ancho*/
     overflow: hidden;/*para que lo que sobresale se recorte*/
     height: 160px;
     
