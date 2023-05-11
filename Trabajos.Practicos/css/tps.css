@@ -426,15 +426,5 @@ h6{
         /*margin: auto;alinear un caja/clase*/
 
 }
-main{
-    background-color: blue;
-    height: 100vh;/*vh al 100 % de mi navegador*/
-    width: 100vh;
-    /*---*/
-}
-.cuadrado{
-    width: 80px;
-    height: 80px;
-    background-color: aqua;
-}
+
     
