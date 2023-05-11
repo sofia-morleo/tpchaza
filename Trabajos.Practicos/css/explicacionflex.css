@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.violeta{background-color: rgb(138, 14, 221);}
+.gris{background-color: grey;}
+.rosa{background-color: rgb(224, 6, 195);}
+
+main{
+    /*padding: 12px;*/
+    background-color: blue;
+    height: 100vh;/*vh al 100 % de mi navegador*/
+    width: 100%;
+    /*---*/
+    gap: 10px;
+    display: flex;
+    flex-direction: column;/*si esta columna los ejes se invierten el justify-content: esta en el eje y si no estaria column estaria en el eje x----text-aling esta en el eje x pero con row esta ene l eje y*/
+    display: flex;/*activando el metodo de organizacion de elementos por defecto m los va a ordenar por fila*/
+    justify-content: space-evenly;/*alinear elementos en el eje x cuando flex-direcction:row(fila o colum----strectch se ajusta al tamaño dle contenedor*/
+    /*space-between genera espacio entre los elemntos---space-around reparte el espacio equitatiba entre el espacio que hay*/
+    /*space-evenly  */
+    align-items: center;/*EJE Y cuando flex-dirrection:row*//*flex-start/flex-end/flex-reverse...*/
+    /*ACTIVVANDO el metodo de organizacion de elementos*/
+
+}
+.cuadrado{
+    flex-grow: 1;/*la capacidad de agrandarse si hay lugar dentro del contenedor donde esta*/
+    flex-shrink: 0;/*la capacidad de achicarse del elemnto*/
+    flex-basis: 30px;/*ancho o altura minima */
+    /*resumen de esos tres flex es flex:0 1 130px*/
+    flex: 0 1 130px;
+    /* width: 80px;
+    height: 80px; */
+    color: aliceblue;
+   text-align: center;
+   line-height: 80px;
+   font-size: 36px;
+   
+   
+
+
+}
