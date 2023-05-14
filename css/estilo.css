@@ -2,10 +2,34 @@
     margin: 0;
     padding: 0; /*todo esto es para que no quede bordes*/
     box-sizing: border-box;
+    
+}
+/*CONTENEDOR SCROLLBAR-- para que se vea mas lindo*/
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    border-radius: 5px;
 }
 
+/* FONDO BARRA SCROLL*/
+::-webkit-scrollbar-track {/*donde se desliza la barra*/ 
+    background: #f1f1f1;
+}
+
+/* SELECTOR */
+::-webkit-scrollbar-thumb {/*los dos puntos :: son ceudo clase*/
+    background: rgb(110, 108, 108);
+    ;
+    border-radius: 5px;
+}
+
+/* SELECTOR hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(172, 170, 170);
+    ;
+}
 header {
-    background-color: rgba(214, 141, 192, 0.836);
+    background-color: rgb(180, 179, 180);
     /*fondo*/
     height: 80px;
     /*altura*/
@@ -35,7 +59,7 @@ header .social{
 
 .social a:hover{
     color:rgb(255, 255, 255);
-    text-shadow: 0 0 5px rgb(124, 164, 189);
+    text-shadow: 0 0 5px rgb(119, 122, 124);
 
 }
 .contenedor{/*acomoda los cuadritos para que no esten uno abajo de otro*/
@@ -60,7 +84,7 @@ header .social{
     /*TODO ESTO LA MANERA ABREVIADA ES EL flex: 1 0;*/
 
     height:500px ;
-    background-color:rgb(214, 141, 192);
+    background-color:rgb(194, 191, 193);
     padding: 20px;/*marco */
     border-radius: 15px;/*redondeo de las puntas*/
 
@@ -74,6 +98,12 @@ header .social{
     background-color: white;
     margin-bottom: 10px;
 }
+.card .imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
 .card .boton{/*se modifica la clase boton dentro de la clase card*/
     position: absolute;
     /*top: 220px; para adentro positivo y para a fuera negativo*/
@@ -81,7 +111,7 @@ header .social{
     right: 20px;/* ponemos lo mismo de padding de clase card para que tenga el mismo margen, pero podes poner lo que quieras*/
     border-radius: 15px ;/*redondeo de las puntas/ ejemplo border-radius: 15px 0px(me redondea en solo dos lados/se puede ir modificando eso)*/
 
-    background-color: rgb(206, 106, 189);
+    background-color: rgb(151, 54, 109);
     padding: 10px;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -95,7 +125,7 @@ header .social{
 }
 
 .boton{
-    background-color: aqua;
+    background-color: rgb(187, 66, 112);
 }
 
 footer{/*verificar Margin-bottom cuando agregue contenido a la clase contenido*/
@@ -108,11 +138,11 @@ footer{/*verificar Margin-bottom cuando agregue contenido a la clase contenido*/
     text-align: center;
 }
 .contenido{
-    height: 1000px;
-    width:85%;
+    
+    width:90%;
     margin: auto;
-    background-color: #A9C9FF;
-    background-image: linear-gradient(180deg, #A9C9FF 0%, #FFBBEC 100%);/*degradado lo podemos hacer con esta pagina web grabient*/
+    background-color: #b8c1d1;
+    background-image: linear-gradient(180deg, #828386 0%, #b4aeb2 100%);/*degradado lo podemos hacer con esta pagina web grabient*/
 
     margin-bottom: 60px;
 

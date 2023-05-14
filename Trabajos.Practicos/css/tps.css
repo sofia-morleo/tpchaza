@@ -200,7 +200,10 @@
     
     border-radius: 12px 0;
 }
-
+.titulo a{
+    text-decoration: none;
+    color: black;
+}
 .valores{
     display: flex;
     justify-content: space-between;
