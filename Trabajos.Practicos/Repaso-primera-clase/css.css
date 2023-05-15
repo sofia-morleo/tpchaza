@@ -1,0 +1,241 @@
+*{
+	
+	margin: 0;
+    padding: 0; /*todo esto es para que no quede bordes*/
+    box-sizing: border-box;
+	padding: 10px;
+}
+
+/*-------COLORES-------*/
+.blanco{
+	background-color: white; 
+}
+.negro{
+	background-color: rgb(36,36,36); 
+	color: white;
+
+}
+.gris{
+	background-color:#c4c4c4;
+	width: 100%;
+	height: 100px;
+	
+	padding: 0 10%;/*eje y y eje x padding: y x;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*header*/
+
+.gris .h2{
+	font-size: 60px;
+	color: white;
+	
+}
+.gris .menu{
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	
+}
+
+/*fin header*/
+
+
+
+/*------tamaños------*/
+
+#banner{
+	width: 100%;
+	height: 500px;
+	background-color: aliceblue;
+	background-image: url(https://media.tycsports.com/files/2023/02/10/532928/lionel-messi_862x485.webp); 
+    /*ajuste de tamaño de la imagen de fondo*/
+    background-position: center; 
+    background-size: cover; /*top desde ariba, bottom desde abajo, cover al centro, tambien center top,center bottom...*/
+    background-repeat: no-repeat; /*nno-repeat para que no se repita la imagen, repeat-y que se rrepita en el eje y , tambien repeat-x que se repita en el eje x*/
+    /*fin tamaño*/
+}   
+#banner .titulo{
+	color: #ffffff;
+	padding: 10%;
+	font-size: 40px;
+}
+
+#descrip{
+	width: 100%;
+	height: 300px;
+	background-color: beige;
+	position: relative;/* vamos a indicar a los contenidos dentro de la descrip, que su 0 sea el marco de descrip*/
+	flex: 1 01 100%;				  
+}
+
+#descrip .texto{/*propiedades para el texto el el hijo de descrip va a estar adentro de descrip*/
+	
+	background-color: #ffffff;
+	font-size: 20px;
+	color: #000000;
+	width: 50%;
+	height: 100%;
+	float: left;/* float que flote en el recuadro de la izquierda*/
+}
+#descrip .texto p{
+	position: relative;
+	
+	
+	
+	font-size: 12px;
+	word-wrap: word-break;
+}
+
+#descrip .imgdescrip{
+	width: 50%;
+	height: 100%;
+	background-color: pink;
+	float: left;
+	background-image: url(https://www.elgrafico.com.ar/media/cache/pub_news_details_large/media/i/4b/fd/4bfd65bf76249.jpg);
+	
+
+	background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat;
+	
+}
+
+
+.texto{
+	background-color: violet;
+}
+
+.productos{
+	width: 100%;
+	height: 400px;
+	background-color: rgb(39, 49, 49);
+	padding:  20px 20px 0;
+}
+
+
+.articulos{
+	height: 100%;
+	width: 25%;
+	font-size: 12pt;
+	text-align: left;
+	border: solid 2px rgb(250, 250, 250);
+	background-color: rgb(183, 181, 185);
+	float: left;
+	padding: 15px;
+
+}
+.articulos .imagen{
+	
+	width:100%;
+	height: 60%;
+	background-color: #a30e0e;
+}
+
+
+.articulos .titulo{
+	font-size: 20px;
+	color: black;
+
+}
+.articulos .desc{/*informacion de los cuadritos*/
+	color: #000000;
+	font: 15px ;
+}
+.articulos .boton{
+	position: relative;
+	float: bottom;
+	padding:  2px 15px;
+	
+	color: black;
+	border: solid aliceblue;
+	
+}
+.articulos .boton:hover{
+    box-shadow: 0 0 5px ;/*cuando seleccionas hace un degradado a los costados cuando esta en maouse en ese objeto*/
+}	
+
+
+#staff{
+	display: flex;
+	width: 100%;
+	height: 300px;
+	background-color: rgb(85, 134, 173);
+	flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: space-around;
+}
+#staff .persona{
+	position: relative;
+	background-color: aqua;
+	width: 200px;
+	height:250px;
+	
+	
+	/*justify-content: space-around;
+	text-align: center;*/
+	
+}
+#staff .persona .imagen{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	
+}
+
+#staff .persona .imagen img{
+	background-repeat: no-repeat;
+    background-size: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+#staff .persona .info{
+	
+	background-color: rgb(153, 160, 150);
+	
+	text-align: center;
+	
+	
+	
+	
+}
+#staff .persona .info h5{
+	text-decoration: none;
+	font-size: 10pt;
+	color: #000000;
+	line-height: 0.2;
+}
+#staff .persona .info h6{
+	text-decoration: none;
+	font-size: 10pt;
+	color: #000000;
+	line-height: 0.2;
+	
+}
+/*condiciones particulares*/
+
+img{
+	object-fit: cover;/*fill agusta en contenido, y cover agusta el contenido sin deformar*/
+	/*aspect-ratio: 1/1; /* mismo ancho y mismo alto tipo la foto de una publicacion de instagram*/
+	aspect-ratio: 16/9;/*tamaño como una tele*/
+
+}
+
+
+
+
+/*funetes de letras*/
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+.tipo1{
+	font-family: 'Kanit', sans-serif;
+}
+footer{/*verificar Margin-bottom cuando agregue contenido a la clase contenido*/
+    height: 60px;
+    width: 100%;
+    background-color: rgb(158, 150, 155);
+    position: fixed;
+    bottom: 0;
+    line-height: 30px;/*centra el texto pero en el eje y*/
+    text-align: center;
+}
