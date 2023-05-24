@@ -54,9 +54,10 @@ footer{
 }
 
 .info{
-    padding: 5px;
+    padding: 1%;
     background-color: rgb(70, 68, 68);
     height: 400px;
+    position: relative;
 
 }
 .info h4{
@@ -64,6 +65,7 @@ footer{
     font-size: 15pt;
 }
 .info .tarjeta{
+    position: absolute;
     padding: 20px;
     background-color: rgb(163, 163, 168);
     width: 90%;
@@ -80,6 +82,11 @@ footer{
     
     width: 90%;
 
+}
+.info .tarjeta i{
+    position: absolute;
+    text-align: right;
+    
 }
 .info .tarjeta .nombre h1{
     font-size: 15pt;
