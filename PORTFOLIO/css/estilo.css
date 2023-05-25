@@ -15,7 +15,7 @@ footer{
 .prin{
     display: flex;
     
-    height: 350px;
+    height: 400px;
     /*background-color: aqua;*/
 }
 .prin .portada{
@@ -28,8 +28,8 @@ footer{
 }
 .prin .portada .material-icons-outlined{
     
-    position: absolute;
-    right: -650px;
+    display: flex;
+    justify-content: end;
     font-size: 20pt;
 }
 /*-----------*/
