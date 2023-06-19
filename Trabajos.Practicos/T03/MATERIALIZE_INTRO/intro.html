@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Intro Materialize</title>
+</head>
+<body>
+    <nav> <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a></nav>
+
+    <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="img/fondo.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="img/bar.jpeg"></a>
+        <a href="#name"><span class="white-text name">Barbie</span></a>
+        <a href="#email"><span class="white-text email">sofymleo@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Subheader</a></li>
+      <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+
+    </ul>
+    
+  
+
+
+    <section class="row container">
+        <div class="col l3 s12 pink accent-2 white-text center-align">A
+            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> 
+            <!-- Modal Structure -->
+ 
+        </div><!-- el white-text pone las letras blancas -->
+        <div class="col l6 s12 purple accent-2 center-align">B
+            <div class="row">
+                <div class="col s12 green h200">
+                    <table class="highlight centered"><!--highlight para que cuando esta en sima en muse este iluminado -->
+                        <thead>
+                          <tr>
+                              <th>Name</th>
+                              <th>Item Name</th>
+                              <th>Item Price</th>
+                          </tr>
+                        </thead>
+                
+                        <tbody>
+                          <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                          </tr>
+                          <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                          </tr>
+                          <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col s6 orange h200">B.2.a</div>
+                <div class="col s6 red h200">B.2.b</div>
+            </div>
+            <div class="row">
+                <div class="col s6 red h200">B.2.a</div>
+                <div class="col s6 orange h200">B.2.b</div>
+            </div>
+        </div>
+        <div class="col l3 s12 light-green lighten-5 center-align">C</div>
+    </section>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p>A bunch of text</p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+      </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/actions.js"></script>
+</body>
+</html>
