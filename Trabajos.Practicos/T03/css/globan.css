@@ -288,9 +288,38 @@ body{
     align-items: center;
     font-size: 30pt;
     text-decoration: none;
-    padding-top: 15px;
-
+}
+.publicacion i{
+    text-decoration: none;
+    color: black;
 }
 .bor{
     height: 20px;
+}
+/*-----inicio.html------*/
+.stories{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 20px;
+}
+.stories .titulo{
+    background-color: aqua;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+.stories .titulo h1{
+    font-size: 30pt;
+    text-decoration: none;
+}
+.info_inicio i{
+    text-decoration: none;
+    color: black;
+    font-size: 20pt;
 }
