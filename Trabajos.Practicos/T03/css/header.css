@@ -2,24 +2,25 @@
     height: 80px;
     width: 100%;
     margin: auto;
-    background-color: aqua;
-    
     display: flex;
     flex-direction: row;
+   
     
-    align-items: center;
 }
 .head .perfil{
-    height: 80px;
-    width: 130px;
-   
-    display: flex;
-    flex-direction: row;
-    text-align: center;
     
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+   
+   
     
 }
 .head .perfil h3{
-    font-size: 20pt;
+    font-size: 30pt;
+    line-height: 80px;
 }
 

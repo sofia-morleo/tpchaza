@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: rgb(223, 207, 182);
 
 } 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
@@ -9,30 +10,59 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.verde{
+    background-color: rgb(44, 190, 44);
+}
+.amarillo{
+    background-color: rgb(218, 218, 85);
+}
+.rosa{
+    background-color: pink;
+}
 
+/*CONTENEDOR SCROLLBAR-- para que se vea mas lindo*/
+::-webkit-scrollbar {
+    height: 6px;
+    width: 5px;
+    border-radius: 5px;
+}
 
+/* FONDO BARRA SCROLL*/
+::-webkit-scrollbar-track {/*donde se desliza la barra*/
+    background: #bbbaba5e;
+}
+
+/* SELECTOR */
+::-webkit-scrollbar-thumb {/*los dos puntos :: son ceudo clase*/
+    background: rgb(54, 54, 54);
+    ;
+    border-radius: 5px;
+}
+
+/* SELECTOR hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(189, 176, 173);
+    ;
+}
 
 body{
-    padding: 10px;
+    padding: 12px;
+    padding-top: 30px;
     background-color: rgb(223, 207, 182);
     height: 100vh;
 }
-/*.app{
+.app{
     height: 100%;
     width: 100%;
-    max-width: 662px;
-    background-color: rgb(255, 255, 255);
-    margin: auto;
-    border-radius: 25px;
     
 
-}*/
+}
 .circulo
 {
     overflow: hidden;
     border-radius: 50%;
-    height: 100%;
-    width: 100%;
+    height: 80px;
+    width: 80px;
 }
 .flex{
     display: flex;
@@ -102,6 +132,7 @@ body{
 }
 .todoInfo .logueo .cuadri_logueo ul li i{
     position: relative;
+    background-color: black;
     left: -25px;
 }
 .todoInfo .logueo .cuadri_logueo h4{
@@ -114,7 +145,54 @@ body{
 }
 .todoInfo .logueo .cuadri_logueo h4 a{
     text-decoration: none;
-    color: rgb(167, 85, 85);
+    color: rgb(104, 98, 98);
 }
 /*fin*/
+/*---index.html---*/
+.drop_menu{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 170px;
+    border-radius: 10px;
+    padding: 18px;
+}
+.drop_menu i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25pt;
+}
+.drop_menu .letras{
+    background-color: white;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: left;
+   
+    
+}
+.drop_menu .letras h3{
+    font-size: 11pt;
+    color: rgb(129, 128, 128);
+    background-color: white;
+    text-decoration: none;
+}
+.drop_menu h4{
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    font-size: 22pt;
+}
 
+.notifi{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start ;
+    overflow-x:scroll;
+    gap: 20px;
+    padding-bottom: 10px;
+}
