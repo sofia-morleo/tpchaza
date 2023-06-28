@@ -3,24 +3,23 @@
     width: 100%;
     margin: auto;
     background-color: aqua;
-    border-radius:  25px 25px 0 0;
+    
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    
     align-items: center;
 }
-.perfil{
-    height: 60px;
-    width: 60px;
-    overflow: hidden;/*toto aquello que se resborde no aapresca*/
+.head .perfil{
+    height: 80px;
+    width: 130px;
+   
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
     
 }
-.busqueda{
-    width: calc(100% - 120px);
-    height: 60px;
-    background-color: yellow;
+.head .perfil h3{
+    font-size: 20pt;
 }
-.drop_menu{
-    width: 60px;
-    height: 60px;
-    background-color: black;
-}
+
