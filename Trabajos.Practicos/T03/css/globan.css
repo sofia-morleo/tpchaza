@@ -306,18 +306,22 @@ a{
     height: 20px;
 }
 /*-----inicio.html------*/
-/* .info_inicio{
+.info_inicio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
     
-} */
+} 
 .stories{
     width: 100%;
-    height: 300px;
+    height: 320px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     padding: 20px;
+    
 }
 .stories .titulo{
-    background-color: aqua;
     width: 100%;
     height: 60px;
     display: flex;
@@ -336,12 +340,12 @@ a{
     font-size: 20pt;
 }
 .stories .stori_add{
-    background-color: blue;
     width: 100%;
-    height: auto;
+    height: 220px;
     display: flex;
     flex-direction: row;
     justify-content:flex-start;
+    align-items: center;
     overflow-x:scroll;
     gap: 20px;
     flex-shrink: 0;
@@ -356,6 +360,8 @@ a{
     justify-content: center;
     align-items: center;
     color: white;
+    z-index:0;
+    flex-shrink: 0;
 }
 .stories .stori_add .add i{
     font-size: 30pt;
@@ -368,19 +374,70 @@ a{
 }
 .stories .stori_add .add .inf_add{
     position: relative;
-    top: 40px;
+    
 }
 .stories .stori_add .add .inf_add h3{
     color: white;
     font-size: 10pt;
+    z-index:3;
+    position: absolute;
+    left: 72px;
+    top: 120px;
 }
 .stories .stori_add .add .inf_add img{
     overflow: hidden;
+    border-radius: 15px;
+    width: 171px;
+    height: 203px;
+    z-index:1;
 }
 img{
     object-fit: cover;
 
+} 
+.publicacion .fot_info .img_publi .ubi{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-z-index:0;
+.publicacion .fot_info .img_publi .ubi .lugar{
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+
+}
+.publicacion .fot_info .img_publi .ubi i{
+    width: 50px;
+    height: 50px;
+    background-color: bisque;
+    font-size: 30pt;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.publicacion .fot_info .img_publi .ubi a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.publicacion .fot_info .img_publi .ubi h4{
+    font-size: 19pt;
+    color: black;
+}
+
+
 
 
